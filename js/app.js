@@ -8,6 +8,7 @@ var cipher = function (initialPhrase) {
   for (var i = 0; i < initialPhrase.length; i++) {
     stringAscii.push(initialPhrase.charCodeAt(i));
   } // for
+   console.log(stringAscii);
   return stringAscii;
 }
 
@@ -24,21 +25,24 @@ function decipher (array,position) {
     } else if ( array[i] >= 97 || array[i] <= 122 ) {
       auxCesar.push( array[i] + position );
     }
-    // Se vuelve a convertir a código ASCII ya con el cambio de posición.
+    // Se vuelve a convertir a código ASCII ya con el cambio de posición de las letras.
       auxDecipher += String.fromCharCode(auxCesar[i]);
     }
+    console.log(auxDecipher);
     return auxDecipher;
   }
 
 // *********** VARIABLES ***********
 
-  /* Mostrar un prompt solicitando al usuario ingrese una frase o palabra
-  para cifrar en código César, evaluando que no sea un número, dejar el campo vacío o poner un espacio.
-  */
+/* Mostrar un prompt solicitando al usuario ingrese una frase o palabra
+para cifrar en código César, evaluando que no sea un número, dejar el campo vacío o poner un espacio.
+*/
   do {
     var message = prompt ('Ingresa una palabra que quieras cifrar en César \n Favor de evitar ingresar números o dejar el campo vacío \n ');
+    document.getElementById("firstAnswer").innerHTML = "" + message;
     } while ( (message) === "" || isNaN (message) === false );
     console.log(message);
+
 
 // *********** LLAMADAS A FUNCIÓN ***********
 
