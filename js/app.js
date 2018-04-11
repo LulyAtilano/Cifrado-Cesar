@@ -30,6 +30,7 @@ function decipher (array,position) {
     }
     console.log(auxDecipher);
     return auxDecipher;
+    // document.getElementById("finalAnswer").innerHTML = "Tu palabra cifrada en césar es: " + auxDecipher;
   }
 
 // *********** VARIABLES ***********
@@ -39,10 +40,9 @@ para cifrar en código César, evaluando que no sea un número, dejar el campo v
 */
   do {
     var message = prompt ('Ingresa una palabra que quieras cifrar en César \n Favor de evitar ingresar números o dejar el campo vacío \n ');
-    document.getElementById("firstAnswer").innerHTML = "" + message;
+//    document.getElementById("firstAnswer").innerHTML = message;
     } while ( (message) === "" || isNaN (message) === false );
     console.log(message);
-
 
 // *********** LLAMADAS A FUNCIÓN ***********
 
