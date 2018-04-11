@@ -21,4 +21,5 @@ En el website con el uso de un prompt se ingresará a una frase para cifrar Cés
 
 Posteriormente usando la función *cypher* encriptaremos la frase en Código ASCII y finalmente devolveremos con la función *decypher* la frase ingresada ya con el cifrado César aplicado y su nueva posición según el código ASCII.
 
+<!-- Comentario de prueba para imagen -->
 ![Diagrama de flujo del ejercicio cifrado Cesar](assets/images/diagrama-flujo-codigoCesar.png)
